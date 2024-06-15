@@ -203,6 +203,7 @@ class SPHBody
     virtual void writeToXmlForReloadParticle(std::string &filefullpath);
     virtual void readFromXmlForReloadParticle(std::string &filefullpath);
     virtual SPHBody *ThisObjectPtr() { return this; };
+
 };
 
 /**
