@@ -185,6 +185,7 @@ class BaseParticles
     StdLargeVec<Real> &VolumetricMeasures() { return Vol_; }
     virtual Real ParticleVolume(size_t index) { return Vol_[index]; }
     virtual Real ParticleSpacing(size_t index) { return std::pow(Vol_[index], 1.0 / Real(Dimensions)); }
+    virtual Real ParticleMass(size_t index) { return mass_[index]; }
 
   protected:
     StdLargeVec<Vecd> pos_;  /**< Position */
